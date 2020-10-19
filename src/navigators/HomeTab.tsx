@@ -1,17 +1,14 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Blank from '../screens/Blank';
+import ExploreTab from './ExploreTab';
 
 const Tab = createBottomTabNavigator();
 
 const HomeTab = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen
-        name="Explore"
-        component={Blank}
-        initialParams={{ title: 'Explore' }}
-      />
+      <Tab.Screen name="Explore" component={ExploreTab} />
       <Tab.Screen
         name="Discounts"
         component={Blank}
