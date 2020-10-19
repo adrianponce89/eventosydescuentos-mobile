@@ -1,6 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Blank from '../screens/Blank';
+import Menu from '../screens/Menu';
 import ExploreTab from './ExploreTab';
 
 const Tab = createBottomTabNavigator();
@@ -19,11 +20,7 @@ const HomeTab = () => {
         component={Blank}
         initialParams={{ title: 'Add' }}
       />
-      <Tab.Screen
-        name="Menu"
-        component={Blank}
-        initialParams={{ title: 'Menu' }}
-      />
+      <Tab.Screen name="Menu" component={Menu} />
     </Tab.Navigator>
   );
 };
