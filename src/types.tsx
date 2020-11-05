@@ -4,6 +4,7 @@ type RootStackParamList = {
   Home: undefined;
   Login: undefined;
   Details: undefined;
+  AddSchedule: undefined;
   Menu: undefined;
   Blank: { title?: string };
 };
@@ -15,5 +16,10 @@ export type HomeProps = StackScreenProps<RootStackParamList, 'Home'>;
 export type DetailsProps = StackScreenProps<RootStackParamList, 'Details'>;
 
 export type MenuProps = StackScreenProps<RootStackParamList, 'Menu'>;
+
+export type AddScheduleProps = StackScreenProps<
+  RootStackParamList,
+  'AddSchedule'
+>;
 
 export type BlankProps = StackScreenProps<RootStackParamList, 'Blank'>;
