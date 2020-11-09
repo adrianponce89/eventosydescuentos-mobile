@@ -1,13 +1,12 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Text, Button } from 'react-native';
-import { LoginProps } from '../types';
+import { StyleSheet, View, Text } from 'react-native';
+import { DetailsProps } from '../../types';
 
-const Login = ({ navigation }: LoginProps) => {
+const Details = ({ navigation }: DetailsProps) => {
   return (
     <View style={styles.body}>
-      <Text style={styles.title}>Login 2</Text>
-      <Button title="Go to Home" onPress={() => navigation.replace('Home')} />
+      <Text style={styles.title}>Details</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -27,4 +26,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Login;
+export default Details;

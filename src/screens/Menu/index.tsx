@@ -6,7 +6,7 @@ import {
   Text,
   TouchableOpacity,
 } from 'react-native';
-import { MenuProps } from '../types';
+import { MenuProps } from '../../types';
 
 const Menu = ({ navigation }: MenuProps) => {
   const handleLogout = () => {
